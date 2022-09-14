@@ -30,6 +30,15 @@ public class TableLine {
 
     @Override
     public String toString() {
-        return cells.toString();
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (int i = 0; i < cells.size() - 1; i++) {
+            stringBuilder.append(cells.get(i));
+            stringBuilder.append("\t");
+        }
+
+        stringBuilder.append(cells.get(cells.size() - 1));
+
+       return stringBuilder.toString();
     }
 }
