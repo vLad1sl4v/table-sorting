@@ -1,8 +1,7 @@
-package by.incubator.application.dao.impl;
+package by.incubator.application.reader.impl;
 
-import by.incubator.application.dao.TableLineDao;
-import by.incubator.application.entity.Cell;
-import by.incubator.application.entity.TableLine;
+import by.incubator.application.reader.TableLineReader;
+import by.incubator.application.table.TableLine;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,11 +11,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class FileTableLineDao implements TableLineDao {
+public class TextFileTableLineReader implements TableLineReader {
     private final static String SEPARATOR = "\t";
     private final Path PATH;
 
-    public FileTableLineDao(String path) {
+    public TextFileTableLineReader(String path) {
         PATH = Paths.get(path);
     }
 
@@ -44,6 +43,5 @@ public class FileTableLineDao implements TableLineDao {
         }
 
         return tableLines;
-
     }
 }

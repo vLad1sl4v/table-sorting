@@ -1,6 +1,6 @@
 package by.incubator.application.writer;
 
-import by.incubator.application.entity.TableLine;
+import by.incubator.application.table.TableLine;
 
 import java.util.List;
 

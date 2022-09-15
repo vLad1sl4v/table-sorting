@@ -1,6 +1,6 @@
 package by.incubator.application.writer.impl;
 
-import by.incubator.application.entity.TableLine;
+import by.incubator.application.table.TableLine;
 import by.incubator.application.writer.TableLineWriter;
 
 import java.io.IOException;
@@ -11,12 +11,10 @@ import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileTableLineWriter implements TableLineWriter {
-    private final static String SEPARATOR = "\t";
-    private final String NEW_LINE = System.lineSeparator();
+public class TextFileTableLineWriter implements TableLineWriter {
     private final Path PATH;
 
-    public FileTableLineWriter(String path) {
+    public TextFileTableLineWriter(String path) {
         PATH = Paths.get(path);
     }
 
