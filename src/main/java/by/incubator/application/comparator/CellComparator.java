@@ -1,6 +1,6 @@
 package by.incubator.application.comparator;
 
-import by.incubator.application.entity.Cell;
+import by.incubator.application.table.Cell;
 
 import java.util.Comparator;
 

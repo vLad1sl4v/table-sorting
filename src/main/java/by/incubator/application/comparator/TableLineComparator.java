@@ -1,7 +1,7 @@
 package by.incubator.application.comparator;
 
-import by.incubator.application.entity.Cell;
-import by.incubator.application.entity.TableLine;
+import by.incubator.application.table.Cell;
+import by.incubator.application.table.TableLine;
 
 import java.util.Comparator;
 import java.util.List;

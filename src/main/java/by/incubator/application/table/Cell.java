@@ -1,7 +1,7 @@
-package by.incubator.application.entity;
+package by.incubator.application.table;
 
 public class Cell {
-    private String cellString;
+    private final String cellString;
 
     public Cell(String cellString) {
         this.cellString = cellString;
@@ -18,16 +18,6 @@ public class Cell {
         } catch (NumberFormatException e) {
             return false;
         }
-    }
-
-    public boolean containsNumber() {
-        for (int i = 0; i < cellString.length(); i++) {
-            if (Character.isDigit(cellString.charAt(i))) {
-                return true;
-            }
-        }
-
-        return false;
     }
 
     public String toString() {

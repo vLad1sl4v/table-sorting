@@ -1,16 +1,10 @@
-package by.incubator.application.entity;
+package by.incubator.application.table;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class TableLine {
-    //private String stringLine;
-    private List<Cell> cells;
-
-//    public TableLine(String stringLine) {
-//        this.stringLine = stringLine;
-//    }
+    private final List<Cell> cells;
 
     public TableLine(List<String> cells) {
         this.cells = new ArrayList<>();
@@ -23,10 +17,6 @@ public class TableLine {
     public List<Cell> getCells() {
         return cells;
     }
-
-//    public String getStringLine() {
-//        return stringLine;
-//    }
 
     @Override
     public String toString() {
