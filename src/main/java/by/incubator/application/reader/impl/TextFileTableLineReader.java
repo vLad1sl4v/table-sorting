@@ -49,7 +49,8 @@ public class TextFileTableLineReader implements TableLineReader {
         List<TableLine> tableLines = new ArrayList<>();
 
         for (String str : lines) {
-            List<String> cells = Arrays.asList(str.split(SEPARATOR));
+            List<String> cells = Arrays.asList(
+                    str.split(SEPARATOR, -1));
             tableLines.add(new TableLine(cells));
         }
 

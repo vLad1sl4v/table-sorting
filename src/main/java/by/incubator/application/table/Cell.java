@@ -22,15 +22,6 @@ public class Cell {
         return cellString;
     }
 
-    public boolean isNumber() {
-        try {
-            Double.parseDouble(cellString);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
-    }
-
     public String toString() {
         return getCellString();
     }
