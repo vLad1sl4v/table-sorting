@@ -7,8 +7,19 @@ import by.incubator.application.service.TableLineService;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * Implementation of {@link by.incubator.application.service.TableLineService}
+ */
 public class TableLineServiceImpl implements TableLineService {
+    /**
+     * Comparator for table lines, used to sort a list of table lines
+     */
     private final Comparator<TableLine> tableLineComparator;
+
+    /**
+     * Repository of Table lines, used for getting table lines from certain source,
+     * writing table lines to a certain source
+     */
     private final TableLineRepository repository;
 
     public TableLineServiceImpl(Comparator<TableLine> tableLineComparator, TableLineRepository repository) {

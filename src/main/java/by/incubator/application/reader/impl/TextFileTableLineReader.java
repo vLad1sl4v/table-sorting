@@ -11,8 +11,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Implementation of {@link by.incubator.application.reader.TableLineReader},
+ * used for getting table lines from a text file
+ */
 public class TextFileTableLineReader implements TableLineReader {
+    /**
+     * Separator for columns of a table
+     */
     private final static String SEPARATOR = "\t";
+
+    /**
+     * Path of the file, which are lines read from
+     */
     private final Path PATH;
 
     public TextFileTableLineReader(String path) {

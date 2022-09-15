@@ -11,7 +11,14 @@ import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Implementation of {@link by.incubator.application.writer.TableLineWriter},
+ * used for writing table lines to a text file
+ */
 public class TextFileTableLineWriter implements TableLineWriter {
+    /**
+     * Path of the file, which are lines read into
+     */
     private final Path PATH;
 
     public TextFileTableLineWriter(String path) {

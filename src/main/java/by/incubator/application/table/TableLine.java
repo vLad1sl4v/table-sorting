@@ -3,9 +3,23 @@ package by.incubator.application.table;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Represents a table line, that is divided by columns into cells, {@link  by.incubator.application.table.Cell}.
+ *
+ * <p>{@code TableLine} can be used to store lines with information from amy source, including files, databases, etc.</p>
+ */
 public class TableLine {
+    /**
+     * Cells, which the line consists of.
+     */
     private final List<Cell> cells;
 
+    /**
+     * Constructor, uses {@code String} values of every cell to create a {@code Cell} objects,
+     * filling it in the {@code List<Cell>}.
+     *
+     * @param cells list of cells, which are the values of every cell in certain table line
+     */
     public TableLine(List<String> cells) {
         this.cells = new ArrayList<>();
 
